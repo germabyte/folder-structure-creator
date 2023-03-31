@@ -14,7 +14,7 @@ This script is designed to automate the creation of a folder structure on Google
 ## Customization
 - `mese`: The name of the root folder (default: 'mese esempio').
 - `parentFolderId`: The ID of the parent folder in which to create the root folder.
-- `weekNames`: An array containing the names of the subfolders within the root folder (default: ['settimana1', 'settimana2', 'settimana3', 'settimana4']).
+- `weekNames`: An array containing the names of the subfolders within the root folder.
 - `weekFolderNames`: A nested array that specifies the subfolder names within each of the week folders.
 
 ## Notes
