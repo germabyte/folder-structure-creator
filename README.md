@@ -1,5 +1,3 @@
-# Simple README for "Create Folders" Script
-
 ## Description
 This script is designed to automate the creation of a folder structure on Google Drive. It creates a root folder named "mese esempio" (example month) and populates it with four subfolders named "settimana1", "settimana2", "settimana3", and "settimana4" (week1, week2, week3, and week4). Each of these subfolders contains a custom set of subfolders.
 
