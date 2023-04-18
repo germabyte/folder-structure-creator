@@ -21,7 +21,3 @@ This is a simple Google Apps Script code that helps you create a specific folder
 ## Limitations
 
 - The script doesn't check if a folder with the same name already exists, which may lead to duplicate folders when running the script multiple times.
-
-## License
-
-This project is released under the MIT License. Please refer to the LICENSE file for more information.
