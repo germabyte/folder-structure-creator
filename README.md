@@ -1,19 +1,27 @@
-## Description
-This script is designed to automate the creation of a folder structure on Google Drive. It creates a root folder named "mese esempio" (example month) and populates it with four subfolders named "settimana1", "settimana2", "settimana3", and "settimana4" (week1, week2, week3, and week4). Each of these subfolders contains a custom set of subfolders.
+# Google Drive Folder Structure Creator
 
-## Usage
-1. Open a new Google Apps Script project in Google Drive (https://script.google.com).
-2. Replace any existing code with the provided script.
-3. Update the `parentFolderId` variable with the ID of the parent folder on your Google Drive where you want to create the "mese esempio" folder.
-4. If desired, modify the `mese`, `weekNames`, and `weekFolderNames` variables to customize the folder structure.
-5. Save the script, then click on the "Run" button to execute the `createFolders` function.
-6. Check your Google Drive for the new folder structure.
+This is a simple Google Apps Script code that helps you create a specific folder structure inside your Google Drive. The script creates a main folder for a specific month with subfolders for each week, and in each week's folder, it creates more subfolders for daily activities or events.
 
-## Customization
-- `mese`: The name of the root folder (default: 'mese esempio').
-- `parentFolderId`: The ID of the parent folder in which to create the root folder.
-- `weekNames`: An array containing the names of the subfolders within the root folder.
-- `weekFolderNames`: A nested array that specifies the subfolder names within each of the week folders.
+## How to use
 
-## Notes
-Please ensure that you have the necessary permissions to create folders in the specified parent folder on Google Drive.
+1. Open your Google Drive and create a new Google Apps Script project.
+2. Copy the code from the provided script and paste it into the Code.gs file.
+3. Replace the `mese` variable's value with the month you want to create the folder structure for (e.g., 'January 2022').
+4. Replace the `parentFolderId` variable's value with the ID of the parent folder where you want to create the monthly folder. (To get the ID, open the parent folder in Google Drive, and the ID is the long string in the middle of the URL in the address bar.)
+5. If you want to customize the names or the number of week folders and their subfolders, modify the `weekFolders` array accordingly.
+6. Save the project and click the Run button (a triangle/play icon) in the toolbar.
+7. The script will create the specified folder structure in the specified parent folder.
+
+## Features
+
+- Creates a monthly folder inside a specific parent folder in Google Drive.
+- Creates weekly folders inside the monthly folder.
+- Creates daily activity or event subfolders inside each weekly folder.
+
+## Limitations
+
+- The script doesn't check if a folder with the same name already exists, which may lead to duplicate folders when running the script multiple times.
+
+## License
+
+This project is released under the MIT License. Please refer to the LICENSE file for more information.
